@@ -1,12 +1,12 @@
 package com.app.services;
 
-import com.app.entity.client;
-import com.app.entity.freelancer;
+import com.app.dto.clientGetDTO;
+import com.app.dto.freelancerAddDTO;
 
 public interface loginService {
 	
-	 public client clientLogin(String email,String password) ;
+	 public clientGetDTO clientLogin(String email,String password) ;
 	 
-	 public freelancer freelancerLogin(String email,String password);
+	 public freelancerAddDTO freelancerLogin(String email,String password);
 
 }

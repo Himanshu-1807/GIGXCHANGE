@@ -1,21 +1,29 @@
 package com.app.dto;
 
-public class freelancerAddDTO {
+public class clientGetDTO {
+	private Long id;
 	private String name;
 	private String phonenumber;
 	private String email;
 	private String password;
 	
-	
-	public freelancerAddDTO() {
+	public clientGetDTO() {
 		
 	}
-	public freelancerAddDTO(String name, String phonenumber, String email, String password) {
-		super();
+	public clientGetDTO(Long id,String name, String phonenumber, String email, String password) {
+		this.id=id;
 		this.name = name;
 		this.phonenumber = phonenumber;
 		this.email = email;
 		this.password = password;
+	}
+	
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;
@@ -43,6 +51,6 @@ public class freelancerAddDTO {
 	}
 	
 	
-	
+
 
 }
